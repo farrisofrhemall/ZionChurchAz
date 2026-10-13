@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Church AZ | Welcome Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Outfit & Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zion: {
+                            gold: '#EEBF6D',
+                            goldDark: '#DDAA11',
+                            blue: '#2B2C9D',
+                            blueDark: '#1E226B',
+                            alabaster: '#EAE7E1',
+                            darkBg: '#0F1016',
+                            cardBg: '#1A1C28',
+                            woodDark: '#17120E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bg-wood-pattern {
+            background-color: #0d0e12;
+            background-image: radial-gradient(rgba(43, 44, 157, 0.25) 1px, transparent 0), radial-gradient(rgba(238, 191, 109, 0.15) 1px, #0f1016 50%);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+
+        .wood-texture-overlay {
+            background: linear-gradient(135deg, rgba(23, 18, 14, 0.92) 0%, rgba(15, 16, 22, 0.96) 100%), 
+                        url('https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0C3 0%, #EEBF6D 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            box-shadow: 0 0 20px rgba(238, 191, 109, 0.2);
+            border: 1px solid rgba(238, 191, 109, 0.3);
+        }
+
+        .gold-btn {
+            background: linear-gradient(135deg, #EEBF6D 0%, #DDAA11 100%);
+            color: #0F1016;
+            transition: all 0.3s ease;
+        }
+
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #FFE08B 0%, #EEBF6D 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(238, 191, 109, 0.35);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F1016;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2B2C9D;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #EEBF6D;
+        }
+    </style>
+</head>
+<body class="bg-zion-darkBg text-zion-alabaster font-sans selection:bg-zion-gold selection:text-zion-darkBg antialiased overflow-x-hidden">
+
+    <!-- 
+        ===================================================================
+        OFFICIAL ZION LOGO EMBED (Exact emblem from uploaded image)
+        Encircled spiral 'e' / 'c' holding stylized geometric 'Z', 
+        with 'Z I O N' typography below.
+        ===================================================================
+    -->
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-zion-darkBg/90 backdrop-blur-md border-b border-zion-gold/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo Left Header -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                        <svg class="w-full h-full text-zion-gold" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer Swirl / Circle C -->
+                            <path d="M 100 25 C 145 25 180 60 180 102 C 180 142 148 175 105 175 C 65 175 35 145 35 105 C 35 60 70 25 115 25 C 135 25 152 32 165 44" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                            <!-- Upper Z Bar -->
+                            <path d="M 70 65 L 130 65" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                            <!-- Diagonal Z Sweep -->
+                            <path d="M 125 68 Q 95 100 70 125" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                            <!-- Lower Z Bar connected to Arc -->
+                            <path d="M 68 125 L 135 125 C 155 125 168 110 162 92" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-black text-2xl tracking-[0.25em] text-white leading-none">ZION</span>
+                        <span class="text-[10px] uppercase tracking-[0.3em] text-zion-gold font-medium mt-1">Church AZ</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm uppercase tracking-wider font-semibold text-gray-300 hover:text-zion-gold transition-colors">About Us</a>
+                    <a href="#pastors" class="text-sm uppercase tracking-wider font-semibold text-gray-300 hover:text-zion-gold transition-colors">Our Pastors</a>
+                    <a href="#zone" class="text-sm uppercase tracking-wider font-semibold text-gray-300 hover:text-zion-gold transition-colors">The Zion Zone</a>
+                    <a href="#events" class="text-sm uppercase tracking-wider font-semibold text-gray-300 hover:text-zion-gold transition-colors">Events</a>
+                    <a href="#values" class="text-sm uppercase tracking-wider font-semibold text-gray-300 hover:text-zion-gold transition-colors">Core Values</a>
+                </nav>
+
+                <!-- Header Action Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <button onclick="openModal('giveModal')" class="gold-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-heart">active</i> Give & Partner
+                    </button>
+                    <a href="#events" class="border border-zion-gold/50 text-zion-gold hover:bg-zion-gold/10 px-4 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all">
+                        Register Event
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuBtn" class="text-zion-alabaster hover:text-zion-gold p-2 text-2xl focus:outline-none" aria-label="Toggle Navigation Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Modal -->
+        <div id="mobileMenu" class="hidden md:hidden bg-zion-darkBg/98 border-b border-zion-gold/20 px-4 pt-4 pb-6 space-y-4 shadow-2xl">
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-gray-200 hover:text-zion-gold border-b border-gray-800">About Us</a>
+            <a href="#pastors" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-gray-200 hover:text-zion-gold border-b border-gray-800">Our Pastors</a>
+            <a href="#zone" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-gray-200 hover:text-zion-gold border-b border-gray-800">The Zion Zone</a>
+            <a href="#events" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-gray-200 hover:text-zion-gold border-b border-gray-800">Upcoming Events</a>
+            <a href="#values" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-gray-200 hover:text-zion-gold border-b border-gray-800">Core Values</a>
+            <div class="pt-2 flex flex-col gap-3">
+                <button onclick="toggleMobileMenu(); openModal('giveModal')" class="w-full gold-btn py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-center">
+                    Give & Partner
+                </button>
+                <a href="#events" onclick="toggleMobileMenu()" class="w-full border border-zion-gold text-zion-gold py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-center">
+                    Register For Events
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-screen pt-28 pb-16 flex items-center justify-center wood-texture-overlay overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-zion-darkBg/60 to-zion-darkBg pointer-events-none"></div>
+
+        <!-- Background Ambient Accent Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-zion-blue/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-zion-gold/15 rounded-full blur-[90px] pointer-events-none"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 text-center z-10">
+            
+            <!-- Large Prominent Vector Logo Display -->
+            <div class="flex flex-col items-center justify-center mb-6">
+                <div class="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 p-3 bg-zion-darkBg/60 rounded-3xl border border-zion-gold/30 shadow-2xl backdrop-blur-md mb-4 hover:border-zion-gold/60 transition-all duration-500">
+                    <svg class="w-full h-full text-zion-gold filter drop-shadow-[0_0_15px_rgba(238,191,109,0.4)]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Swirl / Circle C -->
+                        <path d="M 100 25 C 145 25 180 60 180 102 C 180 142 148 175 105 175 C 65 175 35 145 35 105 C 35 60 70 25 115 25 C 135 25 152 32 165 44" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+                        <!-- Upper Z Bar -->
+                        <path d="M 70 65 L 130 65" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+                        <!-- Diagonal Z Sweep -->
+                        <path d="M 125 68 Q 95 100 70 125" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+                        <!-- Lower Z Bar connected to Arc -->
+                        <path d="M 68 125 L 135 125 C 155 125 168 110 162 92" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h1 class="font-heading font-black text-5xl sm:text-7xl md:text-8xl tracking-[0.25em] text-white uppercase drop-shadow-md">
+                    Z I O N
+                </h1>
+                <p class="text-zion-gold font-serif text-lg sm:text-2xl tracking-[0.4em] uppercase mt-2 font-bold">
+                    CHURCH AZ
+                </p>
+            </div>
+
+            <!-- Mission Pill -->
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zion-blueDark/80 border border-zion-blue/60 text-zion-gold text-xs sm:text-sm font-semibold tracking-wider uppercase mb-8 shadow-lg">
+                <i class="fa-solid fa-fire text-amber-400"></i> Welcome to the Movement
+            </div>
+
+            <p class="text-lg sm:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                Building a Christ-centered community in Arizona with a <span class="text-zion-gold font-semibold">Zeal for Christ</span>, <span class="text-zion-gold font-semibold">Zest to Serve</span>, and determination to <span class="text-zion-gold font-semibold">stay in the zone</span>.
+            </p>
+
+            <!-- Grand Launch Countdown Box -->
+            <div class="bg-zion-cardBg/90 border border-zion-gold/30 rounded-3xl p-6 sm:p-8 max-w-3xl mx-auto shadow-2xl backdrop-blur-md mb-10">
+                <div class="text-xs sm:text-sm uppercase tracking-[0.2em] font-bold text-zion-gold mb-4 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calendar-check"></i> Official Grand Launch Service Count Down
+                </div>
+                <div class="text-xs text-gray-400 mb-6 uppercase tracking-wider font-medium">Sunday, February 28th, 2027 • Arizona</div>
+                
+                <div class="grid grid-cols-4 gap-2 sm:gap-4 text-center" id="countdownTimer">
+                    <div class="bg-zion-darkBg/80 p-3 sm:p-4 rounded-2xl border border-zion-gold/10">
+                        <span class="block text-2xl sm:text-4xl md:text-5xl font-black font-heading text-white" id="days">00</span>
+                        <span class="text-[10px] sm:text-xs text-zion-gold font-bold uppercase tracking-wider">Days</span>
+                    </div>
+                    <div class="bg-zion-darkBg/80 p-3 sm:p-4 rounded-2xl border border-zion-gold/10">
+                        <span class="block text-2xl sm:text-4xl md:text-5xl font-black font-heading text-white" id="hours">00</span>
+                        <span class="text-[10px] sm:text-xs text-zion-gold font-bold uppercase tracking-wider">Hours</span>
+                    </div>
+                    <div class="bg-zion-darkBg/80 p-3 sm:p-4 rounded-2xl border border-zion-gold/10">
+                        <span class="block text-2xl sm:text-4xl md:text-5xl font-black font-heading text-white" id="minutes">00</span>
+                        <span class="text-[10px] sm:text-xs text-zion-gold font-bold uppercase tracking-wider">Mins</span>
+                    </div>
+                    <div class="bg-zion-darkBg/80 p-3 sm:p-4 rounded-2xl border border-zion-gold/10">
+                        <span class="block text-2xl sm:text-4xl md:text-5xl font-black font-heading text-white" id="seconds">00</span>
+                        <span class="text-[10px] sm:text-xs text-zion-gold font-bold uppercase tracking-wider">Secs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#events" class="w-full sm:w-auto gold-btn px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest shadow-xl flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-ticket"></i> Register For Trunk Or Treat
+                </a>
+                <button onclick="openModal('giveModal')" class="w-full sm:w-auto bg-zion-blueDark hover:bg-zion-blue border border-zion-gold/40 text-white px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-hand-holding-heart text-zion-gold"></i> Partner With Us
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT & MISSION SECTION -->
+    <section id="about" class="py-20 bg-zion-darkBg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] font-bold text-zion-gold mb-2">Our Foundation</h2>
+                <h3 class="font-heading font-extrabold text-3xl sm:text-5xl text-white">The Mission & Vision</h3>
+                <div class="w-20 h-1 bg-zion-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Mission Banner -->
+            <div class="bg-gradient-to-r from-zion-blueDark/90 via-zion-cardBg to-zion-blueDark/90 p-8 sm:p-12 rounded-3xl border border-zion-gold/30 shadow-2xl relative overflow-hidden mb-16 text-center">
+                <div class="relative z-10 max-w-4xl mx-auto">
+                    <i class="fa-solid fa-quote-left text-4xl text-zion-gold/40 mb-4 block"></i>
+                    <p class="font-serif text-xl sm:text-3xl text-white leading-relaxed font-semibold italic">
+                        "Zion Church is committed to building a Christ-centered community with a Zeal for Christ, Zest to Serve, and stay in the zone."
+                    </p>
+                    <span class="block mt-6 text-sm uppercase tracking-widest text-zion-gold font-bold">— Zion Church AZ Mission</span>
+                </div>
+            </div>
+
+            <!-- THE ZION ZONE THREE PILLARS -->
+            <div id="zone" class="pt-8">
+                <div class="text-center mb-12">
+                    <h3 class="font-heading font-black text-2xl sm:text-4xl text-white uppercase tracking-wider">
+                        The Zion Zone <span class="text-zion-gold">Pillars</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2">The three foundational pillars shaping our church family</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Pillar 1 -->
+                    <div class="bg-zion-cardBg p-8 rounded-2xl border border-zion-gold/20 hover:border-zion-gold transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                        <div class="w-16 h-16 rounded-2xl bg-zion-blueDark flex items-center justify-center text-zion-gold text-2xl font-black mb-6 group-hover:scale-110 transition-transform">
+                            01
+                        </div>
+                        <h4 class="font-heading font-bold text-2xl text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-fire text-zion-gold text-lg"></i> Zest for His Presence
+                        </h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Cultivating vibrant, uninterrupted worship and authentic communion with God. We seek His Holy Spirit in every moment and service.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="bg-zion-cardBg p-8 rounded-2xl border border-zion-gold/20 hover:border-zion-gold transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                        <div class="w-16 h-16 rounded-2xl bg-zion-blueDark flex items-center justify-center text-zion-gold text-2xl font-black mb-6 group-hover:scale-110 transition-transform">
+                            02
+                        </div>
+                        <h4 class="font-heading font-bold text-2xl text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-heart-pulse text-zion-gold text-lg"></i> Zeal for His People
+                        </h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Demonstrating unconditional love, outreach, and genuine fellowship. Serving our Chandler & Arizona communities with joy and vigor.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="bg-zion-cardBg p-8 rounded-2xl border border-zion-gold/20 hover:border-zion-gold transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                        <div class="w-16 h-16 rounded-2xl bg-zion-blueDark flex items-center justify-center text-zion-gold text-2xl font-black mb-6 group-hover:scale-110 transition-transform">
+                            03
+                        </div>
+                        <h4 class="font-heading font-bold text-2xl text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-bullseye text-zion-gold text-lg"></i> Zone in on His Purpose
+                        </h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Staying laser-focused on Kingdom assignment, discipleship, and spiritual maturity without getting distracted by the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PASTORS BIOS SECTION -->
+    <section id="pastors" class="py-20 bg-wood-pattern relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] font-bold text-zion-gold mb-2">Leadership</h2>
+                <h3 class="font-heading font-extrabold text-3xl sm:text-5xl text-white">Meet Our Pastoral Team</h3>
+                <div class="w-20 h-1 bg-zion-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- PASTOR DERICK ACTKINS FARRIS (LISTED FIRST) -->
+                <div class="bg-zion-cardBg rounded-3xl border border-zion-gold/30 overflow-hidden shadow-2xl flex flex-col justify-between">
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-20 h-20 rounded-2xl bg-zion-blueDark border-2 border-zion-gold flex items-center justify-center text-3xl font-bold text-zion-gold shadow-lg">
+                                PDF
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-2xl sm:text-3xl text-white">Pastor Derick Actkins Farris</h4>
+                                <span class="text-zion-gold text-xs uppercase tracking-widest font-bold">Senior Pastor</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-gray-300 text-sm leading-relaxed">
+                            <p>
+                                <strong class="text-white">Pastor Derick Actkins Farris</strong> was born in Inglewood, CA and called into gospel ministry early in life. He completed minister training in 2007 and was ordained in 2014.
+                            </p>
+                            <p>
+                                A proud graduate of <strong class="text-white">Grand Canyon University</strong> with a Bachelor's Degree in Theology, Pastor Derick accepted the official call to pastor last year with a renewed passion to plant Zion Church AZ.
+                            </p>
+                            <p>
+                                He has an unwavering heart for people, dedicated to seeing lives transformed by the Gospel. Pastor Derick leads a vibrant family of 8 and thoroughly loves serving the Lord with joy and authenticity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-zion-blueDark/50 px-8 py-4 border-t border-zion-gold/20 flex items-center justify-between">
+                        <span class="text-xs text-zion-gold uppercase font-semibold"><i class="fa-solid fa-graduation-cap"></i> GCU Theology Alum</span>
+                        <span class="text-xs text-gray-400"><i class="fa-solid fa-users font-bold"></i> Family of 8</span>
+                    </div>
+                </div>
+
+                <!-- PASTOR TEZ ACTKINS FARRIS (LISTED SECOND) -->
+                <div class="bg-zion-cardBg rounded-3xl border border-zion-gold/30 overflow-hidden shadow-2xl flex flex-col justify-between">
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-20 h-20 rounded-2xl bg-zion-blueDark border-2 border-zion-gold flex items-center justify-center text-3xl font-bold text-zion-gold shadow-lg">
+                                PTF
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-2xl sm:text-3xl text-white">Pastor Tez Actkins Farris</h4>
+                                <span class="text-zion-gold text-xs uppercase tracking-widest font-bold">Co-Pastor & Director</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-gray-300 text-sm leading-relaxed">
+                            <p>
+                                <strong class="text-white">Pastor Tez Actkins Farris</strong> was born in Baltimore, MD. Raised as a preacher's kid, she developed a deep-rooted love for the Church and the word of God from a young age.
+                            </p>
+                            <p>
+                                She has served faithfully across multiple ministry areas including <strong class="text-white">Praise & Worship Leader</strong> and <strong class="text-white">Children's Ministry Director</strong>. She holds her degree from Grand Canyon University (GCU).
+                            </p>
+                            <p>
+                                Pastor Tez carries a powerful passion for ministering to women, helping them unlock their divine identity, paired with a profound and practical understanding of Scripture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-zion-blueDark/50 px-8 py-4 border-t border-zion-gold/20 flex items-center justify-between">
+                        <span class="text-xs text-zion-gold uppercase font-semibold"><i class="fa-solid fa-music"></i> Worship & Children's Ministry</span>
+                        <span class="text-xs text-gray-400"><i class="fa-solid fa-book-open font-bold"></i> Women's Empowerment</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE VALUES GRID SECTION -->
+    <section id="values" class="py-20 bg-zion-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] font-bold text-zion-gold mb-2">Our Guiding Light</h2>
+                <h3 class="font-heading font-extrabold text-3xl sm:text-5xl text-white">9 Core Kingdom Values</h3>
+                <div class="w-20 h-1 bg-zion-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-bible"></i> Scripture First</span>
+                        <span class="text-xs text-gray-400 font-mono">2 Tim 3:16</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Biblical Truth</h4>
+                    <p class="text-xs text-gray-300">Grounding every lesson, decision, and lifestyle standard directly upon God's holy, unshifting Word.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-hands-praying"></i> Prayer Focused</span>
+                        <span class="text-xs text-gray-400 font-mono">1 Thess 5:17</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Unceasing Prayer</h4>
+                    <p class="text-xs text-gray-300">Maintaining active communication with the Father as our primary source of guidance and strength.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-people-roof"></i> Authentic Family</span>
+                        <span class="text-xs text-gray-400 font-mono">Acts 2:42</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Genuine Fellowship</h4>
+                    <p class="text-xs text-gray-300">Creating a safe, welcoming, and transparent community where every individual belongs.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-crown"></i> High Standard</span>
+                        <span class="text-xs text-gray-400 font-mono">Col 3:23</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Kingdom Excellence</h4>
+                    <p class="text-xs text-gray-300">Honoring God by offering our absolute best effort in ministry, worship, and service.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-hand-holding-heart"></i> Servant Heart</span>
+                        <span class="text-xs text-gray-400 font-mono">Mark 10:45</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Selfless Service</h4>
+                    <p class="text-xs text-gray-300">Following Jesus' example by placing the needs of others above our own comfortably.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-earth-americas"></i> Great Commission</span>
+                        <span class="text-xs text-gray-400 font-mono">Matt 28:19</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Bold Evangelism</h4>
+                    <p class="text-xs text-gray-300">Reaching into Arizona and beyond to share the good news of salvation with passion.</p>
+                </div>
+
+                <!-- 7 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-seedling"></i> Growth & Discipleship</span>
+                        <span class="text-xs text-gray-400 font-mono">Eph 4:15</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Intentional Discipleship</h4>
+                    <p class="text-xs text-gray-300">Equipping believers to grow into full spiritual maturity and exercise their God-given gifts.</p>
+                </div>
+
+                <!-- 8 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-coins"></i> Open Stewardship</span>
+                        <span class="text-xs text-gray-400 font-mono">2 Cor 9:7</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Generous Stewardship</h4>
+                    <p class="text-xs text-gray-300">Managing all resources, time, and finances with complete integrity and open-handed giving.</p>
+                </div>
+
+                <!-- 9 -->
+                <div class="bg-zion-cardBg p-6 rounded-2xl border border-zion-gold/15 hover:border-zion-gold/50 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-zion-gold font-bold text-sm uppercase tracking-wider"><i class="fa-solid fa-shield-halved"></i> Uncompromising Life</span>
+                        <span class="text-xs text-gray-400 font-mono">Prov 11:3</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-white mb-2">Moral Integrity</h4>
+                    <p class="text-xs text-gray-300">Living honorably, transparently, and consistently both inside and outside church walls.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING EVENTS SECTION -->
+    <section id="events" class="py-20 bg-wood-pattern border-t border-zion-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] font-bold text-zion-gold mb-2">Get Involved</h2>
+                <h3 class="font-heading font-extrabold text-3xl sm:text-5xl text-white">Upcoming Community Events</h3>
+                <div class="w-20 h-1 bg-zion-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- FEATURED EVENT: TRUNK OR TREAT -->
+                <div class="bg-zion-cardBg rounded-3xl border-2 border-zion-gold overflow-hidden shadow-2xl relative flex flex-col justify-between">
+                    <div class="bg-gradient-to-r from-amber-600 to-amber-700 px-6 py-2 text-white font-bold text-xs uppercase tracking-widest flex items-center justify-between">
+                        <span><i class="fa-solid fa-star"></i> Featured Community Event</span>
+                        <span>Free Family Fun</span>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 text-zion-gold font-semibold text-sm mb-2">
+                            <i class="fa-solid fa-candy-cane"></i> Community Outreach
+                        </div>
+                        <h4 class="font-heading font-extrabold text-3xl text-white mb-4">Trunk Or Treat Celebration</h4>
+                        <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                            Join Zion Church AZ for an unforgettable, safe, and exciting evening of free candy, decorated trunks, bounce houses, games, and fellowship for the entire family!
+                        </p>
+
+                        <div class="space-y-2 mb-8 bg-zion-darkBg/60 p-4 rounded-xl border border-zion-gold/20 text-xs sm:text-sm">
+                            <div class="flex items-center text-gray-300 gap-3">
+                                <i class="fa-solid fa-clock text-zion-gold w-5"></i>
+                                <span>Upcoming Outreach Announcement • 5:00 PM - 8:00 PM</span>
+                            </div>
+                            <div class="flex items-center text-gray-300 gap-3">
+                                <i class="fa-solid fa-location-dot text-zion-gold w-5"></i>
+                                <span>Chandler / East Valley Location (AZ)</span>
+                            </div>
+                        </div>
+
+                        <button onclick="openModal('trunkModal')" class="w-full gold-btn py-4 rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-pen-to-square"></i> Register Family or Host A Trunk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- GRAND LAUNCH EVENT -->
+                <div class="bg-zion-cardBg rounded-3xl border border-zion-gold/30 overflow-hidden shadow-2xl flex flex-col justify-between">
+                    <div class="bg-zion-blueDark px-6 py-2 text-zion-gold font-bold text-xs uppercase tracking-widest flex items-center justify-between">
+                        <span>Official Launch</span>
+                        <span>Save The Date</span>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 text-zion-gold font-semibold text-sm mb-2">
+                            <i class="fa-solid fa-church"></i> Grand Opening
+                        </div>
+                        <h4 class="font-heading font-extrabold text-3xl text-white mb-4">Grand Launch Service</h4>
+                        <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                            Be a part of history as we officially launch Zion Church AZ! Experience inspiring worship, powerful preaching, and connect with our founding church family.
+                        </p>
+
+                        <div class="space-y-2 mb-8 bg-zion-darkBg/60 p-4 rounded-xl border border-zion-gold/20 text-xs sm:text-sm">
+                            <div class="flex items-center text-gray-300 gap-3">
+                                <i class="fa-solid fa-calendar-day text-zion-gold w-5"></i>
+                                <span>Sunday, February 28th, 2027</span>
+                            </div>
+                            <div class="flex items-center text-gray-300 gap-3">
+                                <i class="fa-solid fa-location-pin text-zion-gold w-5"></i>
+                                <span>Arizona Worship Center</span>
+                            </div>
+                        </div>
+
+                        <button onclick="openModal('launchModal')" class="w-full bg-zion-blueDark hover:bg-zion-blue border border-zion-gold/40 text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bell"></i> Get Launch Reminders
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GIVING & PARTNERSHIP MODAL -->
+    <div id="giveModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-zion-cardBg border-2 border-zion-gold rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal('giveModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-2">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Light background variant vector logo inside modal -->
+            <div class="flex items-center gap-3 mb-6 border-b border-zion-gold/20 pb-4">
+                <div class="w-10 h-10">
+                    <svg class="w-full h-full text-zion-gold" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 100 25 C 145 25 180 60 180 102 C 180 142 148 175 105 175 C 65 175 35 145 35 105 C 35 60 70 25 115 25 C 135 25 152 32 165 44" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                        <path d="M 70 65 L 130 65" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                        <path d="M 125 68 Q 95 100 70 125" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                        <path d="M 68 125 L 135 125 C 155 125 168 110 162 92" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl text-white">Give & Partner</h3>
+                    <p class="text-xs text-zion-gold">Sow into Zion Church AZ</p>
+                </div>
+            </div>
+
+            <p class="text-xs text-gray-300 mb-6">
+                Thank you for honoring God with your tithes and supporting the mission to launch Zion Church AZ in Chandler and beyond.
+            </p>
+
+            <form onsubmit="handleGive(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Select Giving Option</label>
+                    <select class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                        <option>Tithes & Offerings</option>
+                        <option>Kingdom Builders Fund</option>
+                        <option>Trunk Or Treat Outreach Sponsor</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Amount ($ USD)</label>
+                    <input type="number" placeholder="100.00" min="1" required class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Your Full Name</label>
+                    <input type="text" placeholder="John Doe" required class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Email Address</label>
+                    <input type="email" placeholder="john@example.com" required class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <button type="submit" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider mt-2">
+                    Proceed To Secure Portal
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TRUNK OR TREAT MODAL -->
+    <div id="trunkModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-zion-cardBg border-2 border-zion-gold rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal('trunkModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-2">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="font-heading font-bold text-2xl text-white mb-1">Trunk Or Treat Registration</h3>
+            <p class="text-xs text-zion-gold mb-6">Register your family or sign up to host a trunk!</p>
+
+            <form onsubmit="handleRegistration(event, 'Trunk or Treat')" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Participation Type</label>
+                    <select class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                        <option>Attending Family Guest</option>
+                        <option>Host A Decorated Trunk</option>
+                        <option>Volunteer Helper</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Full Name</label>
+                    <input type="text" required placeholder="Jane Smith" class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Email Address</label>
+                    <input type="email" required placeholder="jane@example.com" class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Number of Children</label>
+                    <input type="number" min="0" value="1" class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <button type="submit" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider">
+                    Confirm Registration
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LAUNCH SERVICE MODAL -->
+    <div id="launchModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-zion-cardBg border-2 border-zion-gold rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal('launchModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-2">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="font-heading font-bold text-2xl text-white mb-1">Grand Launch RSVP</h3>
+            <p class="text-xs text-zion-gold mb-6">Sunday, February 28, 2027 • Save Your Seat</p>
+
+            <form onsubmit="handleRegistration(event, 'Grand Launch')" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Full Name</label>
+                    <input type="text" required placeholder="Michael Johnson" class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Email Address</label>
+                    <input type="email" required placeholder="michael@example.com" class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-300 mb-1">Total Attendees</label>
+                    <input type="number" min="1" value="2" class="w-full bg-zion-darkBg border border-zion-gold/30 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-zion-gold">
+                </div>
+
+                <button type="submit" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider">
+                    Reserve Seats & Send Updates
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Alert Message -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-zion-blueDark border-2 border-zion-gold text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-zion-gold text-xl"></i>
+        <span id="toastMsg" class="text-xs font-semibold">Success! Action completed.</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-zion-darkBg border-t border-zion-gold/20 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left mb-12">
+                
+                <!-- Footer Brand with SVG Logo -->
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14">
+                        <svg class="w-full h-full text-zion-gold" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 100 25 C 145 25 180 60 180 102 C 180 142 148 175 105 175 C 65 175 35 145 35 105 C 35 60 70 25 115 25 C 135 25 152 32 165 44" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                            <path d="M 70 65 L 130 65" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                            <path d="M 125 68 Q 95 100 70 125" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                            <path d="M 68 125 L 135 125 C 155 125 168 110 162 92" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-heading font-black text-2xl tracking-[0.25em] text-white">ZION</div>
+                        <div class="text-xs text-zion-gold uppercase tracking-[0.3em] font-semibold">CHURCH AZ</div>
+                    </div>
+                </div>
+
+                <!-- Footer Nav Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-xs uppercase tracking-wider font-semibold text-gray-400">
+                    <a href="#about" class="hover:text-zion-gold transition-colors">About Us</a>
+                    <a href="#pastors" class="hover:text-zion-gold transition-colors">Pastors</a>
+                    <a href="#zone" class="hover:text-zion-gold transition-colors">The Zion Zone</a>
+                    <a href="#events" class="hover:text-zion-gold transition-colors">Events</a>
+                    <a href="#values" class="hover:text-zion-gold transition-colors">Core Values</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex items-center gap-4 text-lg">
+                    <a href="#" class="w-10 h-10 rounded-full bg-zion-cardBg border border-zion-gold/20 flex items-center justify-center text-gray-300 hover:text-zion-gold hover:border-zion-gold transition-all">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-zion-cardBg border border-zion-gold/20 flex items-center justify-center text-gray-300 hover:text-zion-gold hover:border-zion-gold transition-all">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-zion-cardBg border border-zion-gold/20 flex items-center justify-center text-gray-300 hover:text-zion-gold hover:border-zion-gold transition-all">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026-2027 Zion Church AZ. All Rights Reserved. Built with Zeal for Christ & Zest to Serve.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer Logic targeting Feb 28, 2027
+        const launchDate = new Date('February 28, 2027 10:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = launchDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        // Modal Handlers
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4000);
+        }
+
+        function handleGive(e) {
+            e.preventDefault();
+            closeModal('giveModal');
+            showToast('Thank you for your generous support of Zion Church AZ!');
+        }
+
+        function handleRegistration(e, eventName) {
+            e.preventDefault();
+            closeModal(eventName === 'Trunk or Treat' ? 'trunkModal' : 'launchModal');
+            showToast(`Registration confirmed for ${eventName}! See you soon.`);
+        }
+    </script>
+</body>
+</html>
